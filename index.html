@@ -16,7 +16,14 @@
   <title>Vue Email List</title>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="container my-5 d-flex flex-column align-items-center">
+      <h1>{{title}}</h1>
+      <ol>
+        <li v-for="email in emails">{{ email }}</li>
+      </ol>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
